@@ -5,7 +5,6 @@
 The goal of this challenge is to create a simple cypress test suite for a simple web app. The simple web app that you will be testing consists of:
 
   - A React frontend calculator that takes a simple input and returns the appropriate result
-  - A Node.js backend using express that consists of a single route and executes the following function:
 
 ## Settings
 
