@@ -37,7 +37,7 @@ Run `git clone https://github.com/igorcap/calculator-testing`
 Run `npm install` from the top level folder of this repository
 
 ### Running The App
-Run `npm run start` in the main folder in your command line to start the server and go to http://localhost:8001 in your browser to view the app.
+Run `npm run start` in the main folder in your command line to start the server and go to http://localhost:8000 in your browser to view the app.
 
 ### Running the Tests
 
