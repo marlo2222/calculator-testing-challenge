@@ -31,7 +31,7 @@ Create cypress tests that test for the above cases. Bonus points for going above
 ## Running the Example application
 
 ### Clone repository
-Run `git clone https://github.com/igorcap/calculator-testing`
+Run `git clone https://github.com/igorcap/calculator-testing-challenge`
 
 ### Install Dependencies
 Run `npm install` from the top level folder of this repository
