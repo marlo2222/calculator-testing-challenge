@@ -36,6 +36,7 @@ function LoginForm({onSuccess, endpoint}) {
 
   return (
     <form
+      id="form-submit"
       onSubmit={handleSubmit}
       css={{
         fontSize: 20,
@@ -49,6 +50,7 @@ function LoginForm({onSuccess, endpoint}) {
       <div>
         <label htmlFor="username-input">Username</label>
         <input
+          data-cy="input-username"
           css={{marginLeft: 10, fontSize: 20}}
           id="username-input"
           name="username"
@@ -57,6 +59,7 @@ function LoginForm({onSuccess, endpoint}) {
       <div css={{marginTop: 20, marginBottom: 20}}>
         <label htmlFor="password-input">Password</label>
         <input
+          data-cy="input-password"
           css={{marginLeft: 10, fontSize: 20}}
           id="password-input"
           name="password"

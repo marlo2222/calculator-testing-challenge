@@ -162,15 +162,17 @@ function Calculator() {
 
   return (
     <div className={styles.calculator}>
-      <React.Suspense
+      <React.Suspense 
         fallback={<div style={{height: 120}}>Loading display...</div>}
       >
         <CalculatorDisplay value={displayValue} />
+        
       </React.Suspense>
       <div className={styles.calculatorKeypad}>
         <div className={styles.inputKeys}>
           <div className={styles.functionKeys}>
             <CalculatorKey
+              data-cy="buttonClear"
               className={styles.keyClear}
               onClick={() => (displayIsNonZero ? clearDisplay() : clearAll())}
             >
@@ -191,6 +193,7 @@ function Calculator() {
           </div>
           <div className={styles.digitKeys}>
             <CalculatorKey
+              data-cy="button0"
               className={styles.key0}
               onClick={() => inputDigit(0)}
             >
@@ -200,54 +203,63 @@ function Calculator() {
               ●
             </CalculatorKey>
             <CalculatorKey
+              data-cy="button1"
               className={styles.key1}
               onClick={() => inputDigit(1)}
             >
               1
             </CalculatorKey>
             <CalculatorKey
+              data-cy="button2"
               className={styles.key2}
               onClick={() => inputDigit(2)}
             >
               2
             </CalculatorKey>
             <CalculatorKey
+              data-cy="button3"
               className={styles.key3}
               onClick={() => inputDigit(3)}
             >
               3
             </CalculatorKey>
             <CalculatorKey
+              data-cy="button4"
               className={styles.key4}
               onClick={() => inputDigit(4)}
             >
               4
             </CalculatorKey>
             <CalculatorKey
+              data-cy="button5"
               className={styles.key5}
               onClick={() => inputDigit(5)}
             >
               5
             </CalculatorKey>
             <CalculatorKey
+              data-cy="button6"
               className={styles.key6}
               onClick={() => inputDigit(6)}
             >
               6
             </CalculatorKey>
             <CalculatorKey
+              data-cy="button7"
               className={styles.key7}
               onClick={() => inputDigit(7)}
             >
               7
             </CalculatorKey>
             <CalculatorKey
+              data-cy="button8"
               className={styles.key8}
               onClick={() => inputDigit(8)}
             >
               8
             </CalculatorKey>
             <CalculatorKey
+              data-cy="button9"
               className={styles.key9}
               onClick={() => inputDigit(9)}
             >
@@ -269,18 +281,21 @@ function Calculator() {
             ×
           </CalculatorKey>
           <CalculatorKey
+            data-cy="buttonSubt"
             className={styles.keySubtract}
             onClick={() => performOperation('-')}
           >
             −
           </CalculatorKey>
           <CalculatorKey
+            data-cy="buttonSum"
             className={styles.keyAdd}
             onClick={() => performOperation('+')}
           >
             +
           </CalculatorKey>
           <CalculatorKey
+            data-cy="buttonEquals"
             className={styles.keyEquals}
             onClick={() => performOperation('=')}
           >
